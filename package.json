@@ -1,0 +1,29 @@
+{
+  "name": "wallaby-jest-cucumber-sample",
+  "version": "1.0.0",
+  "description": "Execute Gherkin scenarios in Wallaby with Jest",
+  "scripts": {
+    "test": "jest --color"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^23.4.0",
+    "babel-plugin-module-resolver": "^3.1.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^23.4.0",
+    "jest-cucumber": "^2.0.11"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testMatch": [
+      "**/*.steps.js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ]
+  },
+  "dependencies": {}
+}
